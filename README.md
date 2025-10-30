@@ -1,25 +1,35 @@
 # LinkedIn Auto Post (APIs Linkedin + OpenAI)
 
-This is a Jupyter Notebook file that demonstrates the integration of APIs from Linkedin and OpenAI to automate posting on LinkedIn. The notebook covers token management, folder reading, and OpenAI integration to facilitate automated posting on the LinkedIn platform.
+This project allows users to automatically post content to LinkedIn using the LinkedIn API and integrate OpenAI for generating content. The script handles token management, folder reading, and OpenAI integration for seamless posting on LinkedIn.
 
 ## Purpose and Main Features
 
-The purpose of this project is to showcase how APIs from Linkedin and OpenAI can be used together to automate the posting process on LinkedIn. The main features include token management, reading folders for content, and utilizing OpenAI for generating content for posts.
+The main purpose of this project is to streamline the process of posting content on LinkedIn by automating the posting process and utilizing OpenAI for content generation. Key features include:
+- Token management for LinkedIn API
+- Reading folders for content
+- Integration with OpenAI for content generation
+- Seamless posting to LinkedIn
 
 ## File Structure Explanation
 
-The notebook contains cells that are a combination of markdown for explanations and code for implementation. It starts with imports and configuration of necessary packages and API keys. The subsequent cells demonstrate token management, reading folder contents, and integrating OpenAI for content generation.
+- `LinkedIn Auto Post (APIs Linkedin + OpenAI)_.ipynb`: Jupyter notebook containing the script for automating LinkedIn posts using the LinkedIn API and OpenAI integration.
+- `linkedin_token_meta.json`: File storing token metadata for LinkedIn API.
 
 ## Key Functions/Classes
 
-- **Imports and Configuration:** Sets up the required packages and API keys for Linkedin, OpenAI, and token management.
-- **Token Management:** Handles the token metadata file and loads the necessary tokens for authentication.
-- **OpenAI Integration:** Utilizes the OpenAI API to generate content for LinkedIn posts.
+- `import os`, `json`, `requests`: Importing necessary libraries.
+- `datetime`, `timedelta`: Handling date and time functions.
+- `openai_client = OpenAI(api_key=OPENAI_API_KEY)`: Initializing the OpenAI client.
+- `load_configuration()`: Function to load configuration.
+- `post_to_linkedin(content)`: Function to post content to LinkedIn.
+- `generate_content()`: Function to generate content using OpenAI.
+- `main()`: Main function to drive the automation process.
 
 ## Usage Instructions
 
-1. Fill in your API keys for OpenAI, Linkedin, client ID, and client secret in the provided placeholders.
-2. Run the notebook cells sequentially to set up the configuration.
-3. Use the functions/classes provided in the notebook to automate the posting process on LinkedIn.
+1. Set your API keys for OpenAI, LinkedIn, client ID, and client secret in the script.
+2. Run the script and ensure the configuration is successfully loaded.
+3. Use the `generate_content()` function to generate content using OpenAI.
+4. Use the `post_to_linkedin(content)` function to post the generated content to LinkedIn.
 
-Note: Ensure to follow the API documentation and guidelines for proper usage and authorization.
+Ensure you have the necessary permissions and tokens for LinkedIn API access before running the script.
