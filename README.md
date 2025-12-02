@@ -1,35 +1,25 @@
-# LinkedIn Auto Post (APIs Linkedin + OpenAI)
+# Instagram Auto-Poster with AI (OpenAI API Key)
 
-This project allows users to automatically post content to LinkedIn using the LinkedIn API and integrate OpenAI for generating content. The script handles token management, folder reading, and OpenAI integration for seamless posting on LinkedIn.
+This notebook automates Instagram posting with AI-generated captions using the OpenAI and Instagrapi libraries.
 
 ## Purpose and Main Features
 
-The main purpose of this project is to streamline the process of posting content on LinkedIn by automating the posting process and utilizing OpenAI for content generation. Key features include:
-- Token management for LinkedIn API
-- Reading folders for content
-- Integration with OpenAI for content generation
-- Seamless posting to LinkedIn
+The purpose of this project is to streamline the process of posting on Instagram by automatically generating captions using artificial intelligence. The main features include installing required packages, setting up environment variables, configuring folder paths, and running the automation process.
 
 ## File Structure Explanation
 
-- `LinkedIn Auto Post (APIs Linkedin + OpenAI)_.ipynb`: Jupyter notebook containing the script for automating LinkedIn posts using the LinkedIn API and OpenAI integration.
-- `linkedin_token_meta.json`: File storing token metadata for LinkedIn API.
-
+- **Instagram Auto-Poster with AI (OpenAI API Key)_.ipynb:** Jupyter notebook containing the code for the Instagram auto-posting with AI functionality.
+  
 ## Key Functions/Classes
 
-- `import os`, `json`, `requests`: Importing necessary libraries.
-- `datetime`, `timedelta`: Handling date and time functions.
-- `openai_client = OpenAI(api_key=OPENAI_API_KEY)`: Initializing the OpenAI client.
-- `load_configuration()`: Function to load configuration.
-- `post_to_linkedin(content)`: Function to post content to LinkedIn.
-- `generate_content()`: Function to generate content using OpenAI.
-- `main()`: Main function to drive the automation process.
+- **Install Required Packages:** Installs the necessary libraries (instagrapi, openai, Pillow).
+- **Import Libraries:** Imports the required Python libraries for the automation process.
+- **Set Up Environment Variables:** Configures the necessary environment variables for the automation to work.
+- **Run the Automation:** Executes the automation process to generate AI captions and post on Instagram.
 
 ## Usage Instructions
 
-1. Set your API keys for OpenAI, LinkedIn, client ID, and client secret in the script.
-2. Run the script and ensure the configuration is successfully loaded.
-3. Use the `generate_content()` function to generate content using OpenAI.
-4. Use the `post_to_linkedin(content)` function to post the generated content to LinkedIn.
-
-Ensure you have the necessary permissions and tokens for LinkedIn API access before running the script.
+1. Install the required packages by running the command: `!pip install instagrapi openai Pillow`.
+2. Import the necessary libraries and set up the environment variables as per the instructions in the notebook.
+3. Configure the folder path where the images for posting are located.
+4. Run the automation process to automatically generate captions using AI and post on Instagram.
